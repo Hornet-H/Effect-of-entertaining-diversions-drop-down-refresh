@@ -10,4 +10,14 @@
 
 @interface HFRefreshBezierLabel : UIView
 
+@property(copy,nonatomic)NSString *text;
+@property(strong,nonatomic )UIFont *textFont;
+@property(strong,nonatomic )UIColor *textColor;
+@property(strong,nonatomic )CAShapeLayer *shapeLayer;
+@property(strong,nonatomic )CAGradientLayer *grandientLayer;
+
+@property(assign,nonatomic )CGSize textSize;
+@property(assign,nonatomic )CGFloat offset;
+@property(assign,nonatomic )BOOL showAnimation;
+
 @end

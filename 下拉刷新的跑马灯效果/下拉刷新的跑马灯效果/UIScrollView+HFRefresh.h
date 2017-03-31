@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HFDrawTextView.h"
 
 @interface UIScrollView (HFRefresh)
+@property(strong,nonatomic )HFDrawTextView *drawTextView;
+- (void)addHeaderWithAction:(void(^)())action;
+- (void)addHeaderWithAction:(void (^)())action customControl:(void (^)(HFDrawTextView *drawView)) opration;
+- (void)endHeaderRefresh;
 
 @end

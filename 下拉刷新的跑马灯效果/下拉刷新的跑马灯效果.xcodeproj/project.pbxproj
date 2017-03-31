@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		870F679B1E8E0F2E009CC44F /* UIScrollView+HFRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 870F679A1E8E0F2E009CC44F /* UIScrollView+HFRefresh.m */; };
+		870F679E1E8E0FB1009CC44F /* HFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 870F679D1E8E0FB1009CC44F /* HFTableViewController.m */; };
+		870F67A21E8E1056009CC44F /* HFDrawTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 870F67A11E8E1056009CC44F /* HFDrawTextView.m */; };
+		870F67A51E8E15CA009CC44F /* HFRefreshBezierLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 870F67A41E8E15CA009CC44F /* HFRefreshBezierLabel.m */; };
 		87DE388F1E84D76000D10DF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DE388E1E84D76000D10DF7 /* main.m */; };
 		87DE38921E84D76000D10DF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DE38911E84D76000D10DF7 /* AppDelegate.m */; };
 		87DE38951E84D76000D10DF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DE38941E84D76000D10DF7 /* ViewController.m */; };
@@ -16,6 +20,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		870F67991E8E0F2E009CC44F /* UIScrollView+HFRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+HFRefresh.h"; path = "下拉刷新的跑马灯效果/UIScrollView+HFRefresh.h"; sourceTree = "<group>"; };
+		870F679A1E8E0F2E009CC44F /* UIScrollView+HFRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+HFRefresh.m"; path = "下拉刷新的跑马灯效果/UIScrollView+HFRefresh.m"; sourceTree = "<group>"; };
+		870F679C1E8E0FB1009CC44F /* HFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTableViewController.h; sourceTree = "<group>"; };
+		870F679D1E8E0FB1009CC44F /* HFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTableViewController.m; sourceTree = "<group>"; };
+		870F67A01E8E1056009CC44F /* HFDrawTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFDrawTextView.h; sourceTree = "<group>"; };
+		870F67A11E8E1056009CC44F /* HFDrawTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFDrawTextView.m; sourceTree = "<group>"; };
+		870F67A31E8E15CA009CC44F /* HFRefreshBezierLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRefreshBezierLabel.h; sourceTree = "<group>"; };
+		870F67A41E8E15CA009CC44F /* HFRefreshBezierLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRefreshBezierLabel.m; sourceTree = "<group>"; };
 		87DE388A1E84D76000D10DF7 /* 下拉刷新的跑马灯效果.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "下拉刷新的跑马灯效果.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DE388E1E84D76000D10DF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87DE38901E84D76000D10DF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,9 +51,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		870F679F1E8E0FC0009CC44F /* HFDrawTextRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				870F67991E8E0F2E009CC44F /* UIScrollView+HFRefresh.h */,
+				870F679A1E8E0F2E009CC44F /* UIScrollView+HFRefresh.m */,
+				870F67A01E8E1056009CC44F /* HFDrawTextView.h */,
+				870F67A11E8E1056009CC44F /* HFDrawTextView.m */,
+				870F67A31E8E15CA009CC44F /* HFRefreshBezierLabel.h */,
+				870F67A41E8E15CA009CC44F /* HFRefreshBezierLabel.m */,
+			);
+			name = HFDrawTextRefresh;
+			sourceTree = "<group>";
+		};
 		87DE38811E84D76000D10DF7 = {
 			isa = PBXGroup;
 			children = (
+				870F679F1E8E0FC0009CC44F /* HFDrawTextRefresh */,
 				87DE388C1E84D76000D10DF7 /* 下拉刷新的跑马灯效果 */,
 				87DE388B1E84D76000D10DF7 /* Products */,
 			);
@@ -62,6 +88,8 @@
 				87DE38911E84D76000D10DF7 /* AppDelegate.m */,
 				87DE38931E84D76000D10DF7 /* ViewController.h */,
 				87DE38941E84D76000D10DF7 /* ViewController.m */,
+				870F679C1E8E0FB1009CC44F /* HFTableViewController.h */,
+				870F679D1E8E0FB1009CC44F /* HFTableViewController.m */,
 				87DE38961E84D76000D10DF7 /* Main.storyboard */,
 				87DE38991E84D76000D10DF7 /* Assets.xcassets */,
 				87DE389B1E84D76000D10DF7 /* LaunchScreen.storyboard */,
@@ -151,8 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				87DE38951E84D76000D10DF7 /* ViewController.m in Sources */,
+				870F67A51E8E15CA009CC44F /* HFRefreshBezierLabel.m in Sources */,
 				87DE38921E84D76000D10DF7 /* AppDelegate.m in Sources */,
+				870F679E1E8E0FB1009CC44F /* HFTableViewController.m in Sources */,
+				870F67A21E8E1056009CC44F /* HFDrawTextView.m in Sources */,
 				87DE388F1E84D76000D10DF7 /* main.m in Sources */,
+				870F679B1E8E0F2E009CC44F /* UIScrollView+HFRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

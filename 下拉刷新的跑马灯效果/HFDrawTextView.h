@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+@class HFRefreshBezierLabel;
+
+typedef NS_ENUM(NSInteger ,HFRefreshstate) {
+    HFRefreshstateNormal = 0 ,
+    HFRefreshstateRefreshing = 1,
+    HFRefreshstateWillRefresh = 2
+    
+};
 
 @interface HFDrawTextView : UIView
+@property(copy,nonatomic)void (^action)();
+@property(weak,nonatomic )UIScrollView *scrollView;
+@property(assign,nonatomic )HFRefreshstate refreshState;
+@property(strong,nonatomic,readonly)HFRefreshBezierLabel *bezierLabel;
 
+@property (nonatomic, weak) NSString *refreshText;
+@property (nonatomic, weak) UIColor *textColor;
+
+- (instancetype)initWithScrollView:(UIScrollView *)scrollView;
+- (void)endHeaderRefresh;
 @end
