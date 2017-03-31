@@ -31,7 +31,6 @@
 }
 - (void)initSubViews{
     self.frame = CGRectMake(0, -64, self.scrollView.frame.size.width, 64);
-    //    self.backgroundColor = [UIColor redColor];
     [self.scrollView addSubview:self];
 }
 
@@ -102,7 +101,7 @@
 -(HFRefreshBezierLabel *)bezierLabel{
     if (!_bezierLabel) {
         _bezierLabel = [[HFRefreshBezierLabel alloc]initWithFrame:self.bounds];
-                _bezierLabel.backgroundColor =[UIColor redColor];
+//        _bezierLabel.backgroundColor =[UIColor redColor];
         _bezierLabel.text = @"Jiang-Fallen";
         [self addSubview:_bezierLabel];
     }

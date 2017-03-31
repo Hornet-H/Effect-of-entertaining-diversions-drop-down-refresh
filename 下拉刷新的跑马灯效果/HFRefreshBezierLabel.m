@@ -110,7 +110,7 @@
     }
     if (showAnimation) {
         self.shapeLayer.strokeEnd = 1;
-        _grandientLayer.backgroundColor = [UIColor redColor].CGColor;
+        _grandientLayer.backgroundColor = [UIColor clearColor].CGColor;
         
     }else{
         _grandientLayer.backgroundColor = self.textColor.CGColor;
